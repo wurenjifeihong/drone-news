@@ -233,6 +233,11 @@ $pushScript = Join-Path $PSScriptRoot "push_to_qq.ps1"
 if (Test-Path $pushScript) {
     & $pushScript -Title $topTitle -NewsCount $allItems.Count -BidCount $bidItems.Count
 }
+# 飞书推送
+$feishuScript = Join-Path $PSScriptRoot "push_to_feishu.ps1"
+if (Test-Path $feishuScript) {
+    & $feishuScript -Title $topTitle -NewsCount $allItems.Count -BidCount $bidItems.Count
+}
 } catch {
     Write-Output "Git push skipped: $_"
 }

@@ -1,0 +1,4 @@
+﻿{
+  "builds": [{ "src": "feishu-bot/index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/feishu", "dest": "feishu-bot/index.js" }]
+}
