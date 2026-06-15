@@ -1,0 +1,6 @@
+﻿# 忽略临时文件
+*.exe
+build_exe.ps1
+release.ps1
+rollback.ps1
+patch_bond.ps1
