@@ -1,0 +1,22 @@
+﻿{
+  "name": "低空经济通",
+  "short_name": "低空经济通",
+  "description": "每日无人机资讯、招投标、SLAM与高斯泼溅点云",
+  "start_url": "/drone-news/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f0f2f5",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
