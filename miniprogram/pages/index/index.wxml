@@ -1,0 +1,33 @@
+﻿<view class="header">
+  <view class="header-title">🚁 无人机日报</view>
+  <view class="header-sub">{{dateStr}} 星期{{weekday}} · {{updateTime}}</view>
+  <view class="header-count">📰 今日 {{newsList.length}} 条资讯</view>
+</view>
+
+<view class="container">
+  <block wx:for="{{newsList}}" wx:key="Title">
+    <view class="card" bindtap="openDetail" hover-class="card-hover" data-id="{{index}}">
+      <view class="card-num">{{index + 1}}</view>
+      <view class="card-body">
+        <view class="card-title">{{item.Title}}</view>
+        <view class="card-meta">
+          <text class="badge">{{item.Source}}</text>
+          <text>{{item.Time}}</text>
+        </view>
+        <image wx:if="{{item.Image}}" src="{{item.Image}}" mode="widthFix" class="card-img" lazy-load />
+        <view class="card-summary">{{item.Summary}}</view>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{newsList.length === 0}}">
+    <view class="empty">
+      <view class="empty-icon">📭</view>
+      <view class="empty-text">暂无新闻</view>
+      <view class="empty-hint">下拉刷新试试</view>
+    </view>
+  </block>
+</view>
+
+<view class="footer">每日自动生成 · Bing图片搜索配图</view>
+

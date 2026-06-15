@@ -1,0 +1,13 @@
+﻿<view class="detail">
+  <view class="detail-title">{{title}}</view>
+  <view class="detail-meta">
+    <text class="badge">{{source}}</text>
+    <text>{{time}}</text>
+  </view>
+  <image wx:if="{{image}}" src="{{image}}" mode="widthFix" class="detail-img" />
+  <view class="detail-summary">{{summary}}</view>
+  <block wx:if="{{link}}">
+    <view class="divider"></view>
+    <button class="link-btn" bindtap="openLink">🔗 查看原文</button>
+  </block>
+</view>

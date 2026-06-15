@@ -1,0 +1,25 @@
+﻿.header {
+  background: linear-gradient(135deg, #0d1b2a, #1b2838, #415a77);
+  color: #fff;
+  padding: 32rpx 48rpx 48rpx;
+  text-align: center;
+}
+.header-title { font-size: 48rpx; font-weight: 700; letter-spacing: 4rpx; margin-bottom: 12rpx; }
+.header-sub { font-size: 26rpx; opacity: 0.75; }
+.header-count { display: inline-block; background: rgba(255,255,255,0.15); padding: 8rpx 32rpx; border-radius: 40rpx; margin-top: 20rpx; font-size: 24rpx; }
+.container { padding: 24rpx; padding-bottom: 40rpx; }
+.card { background: #fff; border-radius: 20rpx; margin-bottom: 24rpx; display: flex; overflow: hidden; box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06); }
+.card-hover { transform: scale(0.98); opacity: 0.9; }
+.card-num { min-width: 80rpx; display: flex; align-items: flex-start; justify-content: center; padding: 28rpx 0; font-size: 32rpx; font-weight: 700; color: #1a73e8; background: #f8faff; }
+.card-body { flex: 1; padding: 24rpx 32rpx 28rpx 24rpx; min-width: 0; }
+.card-title { font-size: 32rpx; font-weight: 600; color: #1a1a1a; margin-bottom: 14rpx; line-height: 1.5; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.card-meta { font-size: 22rpx; color: #999; margin-bottom: 16rpx; display: flex; align-items: center; gap: 16rpx; }
+.badge { background: #e8f0fe; color: #1a73e8; padding: 4rpx 16rpx; border-radius: 16rpx; font-size: 20rpx; font-weight: 500; }
+.card-img { width: 100%; border-radius: 12rpx; margin-bottom: 14rpx; }
+.card-summary { font-size: 26rpx; color: #666; line-height: 1.8; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.empty { text-align: center; padding: 160rpx 0; }
+.empty-icon { font-size: 100rpx; }
+.empty-text { font-size: 32rpx; color: #999; margin-top: 20rpx; }
+.empty-hint { font-size: 24rpx; color: #bbb; margin-top: 12rpx; }
+.footer { text-align: center; padding: 20rpx; font-size: 22rpx; color: #bbb; }
+

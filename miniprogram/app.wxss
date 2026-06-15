@@ -1,0 +1,6 @@
+﻿page {
+  background: #f0f2f5;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
