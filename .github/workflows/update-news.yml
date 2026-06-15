@@ -1,0 +1,15 @@
+﻿name: News Update
+on:
+  repository_dispatch:
+    types: [update-news]
+  schedule:
+    - cron: "0 22 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger local update
+        run: |
+          echo "News update triggered at $(date -u)"
